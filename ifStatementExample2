@@ -1,0 +1,14 @@
+#Prompt:
+carSpeed = 40
+speedLimit = 60
+#End Prompt
+
+#Create a program that tests if the car is going
+#above or below the given speed limit
+
+if carSpeed < speedLimit:
+    print('The car is going below the speed limit')
+if carSpeed > speedLimit:
+    print('The car is going over the speed limit')
+if carSpeed == speedLimit:
+    print('The car is going at exactly the speed limit!')
