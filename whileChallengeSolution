@@ -1,0 +1,9 @@
+# Create a program that prints 1-100
+
+
+print('start')
+x = 1
+while(x<=100):
+    print(str(x))
+    x = x+1
+print('end')
