@@ -1,0 +1,9 @@
+def myFunction(x):
+    # This function accepts a parameter x, which is an
+    # integer. Then it computes the value f(x) and prints
+    # it.
+    y = 9*x + 1
+    print(str(y))
+
+for i in range(5):
+    myFunction(i)
