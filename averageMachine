@@ -1,0 +1,28 @@
+# Create a program that prints an average for a set of
+# numbers:
+
+# First, ask the user for how many numbers he would like
+# to enter.
+
+# Then ask him to input each number
+
+# Then calculate the average and print it
+
+print('Welcome to my average machine!')
+print('Enter in how many numbers you would like to average')
+print('n: ')
+
+n = int(input())
+
+totalSum = 0
+
+for i in range(n):    
+    print('Please enter a number: ')
+    usrInput = int(input())
+    totalSum = totalSum + usrInput
+
+# totalSum is now all of the numbers added together
+
+average = totalSum / n
+
+print('Your average is: ' + str(average))
