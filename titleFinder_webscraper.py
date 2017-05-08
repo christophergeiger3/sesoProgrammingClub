@@ -9,12 +9,17 @@ pattern = re.compile(regex)
 for url in urls:
     html = scrape.urlopen(url)
     html = str(html.read())
-    titles.append(re.findall(pattern, html))
+    found = re.findall(pattern, html)
+    if found:
+        titles.append(found)
+    else:
+        print("error at " + url)
 
-for title in titles:
-    print(title)
+if titles:
+    for title in titles:
+        print(title)
 
-
+input()
 
 
 '''
